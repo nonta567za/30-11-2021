@@ -26,6 +26,10 @@ Route::get('/admin/product/index','Admin\ProductController@index')->name('produc
 //menu
 Route::get('/admin/menu/index','Admin\MenuController@index')->name('menu');
 Route::post('/admin/menu/create','Admin\MenuController@create')->name('create');
+Route::get('/admin/menu/edit/{id}','Admin\MenuController@edit');
+Route::post('/admin/menu/update/{id}','Admin\MenuController@update');
+Route::get('/admin/menu/delete/{id}','Admin\MenuController@delete');
+
 //user
 Route::get('/admin/user/index','User@index')->name('user');
 //body

@@ -8,25 +8,50 @@
       @csrf
 <div class="form-group">
     <label for="name">Menu</label>
-    <input type="text" class="form-control" id="name" name="name" placeholder="Menu name">
+    <input type="text" class="form-control" id="text" name="text" placeholder="Menu name">
+    <div class="row mt-3">
+      @error('text')
+      <span class="text-danger">{{$message}}</span>
+      @enderror
+    </div>
 </div>
 <div class="form-group">
     <label for="status">Status</label>
     <input type="text" class="form-control" id="status" name="status" placeholder="status">
+    <div class="row mt-3">
+      @error('status')
+      <span class="text-danger">{{$message}}</span>
+      @enderror
+    </div>
 </div>
 <div class="form-group">
     <label for="id_user">User</label>
     <input type="text" class="form-control" id="id_user" name="id_user" placeholder="id_user">
+    <div class="row mt-3">
+      @error('id_user')
+      <span class="text-danger">{{$message}}</span>
+      @enderror
+    </div>
 </div>
 <div class="form-group">
     <label for="id_types">types</label>
     <input type="text" class="form-control" id="id_types" name="id_types" placeholder="id_types">
+    <div class="row mt-3">
+      @error('id_types')
+      <span class="text-danger">{{$message}}</span>
+      @enderror
+    </div>
 </div>
 <div class="form-group">
     <label for="image">Image Menu</label>
     <div class="custom-file">
     <input type="file" class="custom-file-input" id="image" name="image">
     <label class="custom-file-label" for="image">Chiise file </label>
+    <div class="row mt-3">
+      @error('image')
+      <span class="text-danger">{{$message}}</span>
+      @enderror
+    </div>
 </div>
 </div>
     <button type="sunmit" name="submit" class="btn btn-success">Submit</button>

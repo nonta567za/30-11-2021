@@ -36,7 +36,7 @@
 </div>
 
 </div>
-    <button type="sunmit" name="submit" class="btn btn-success">Submit</button>
+<button type="sunmit" name="submit" class="btn btn-success">Submit</button>
 </form>
 
 <div class="container">
